@@ -52,7 +52,7 @@ app.use((err, req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Welcome to my myFlix!');
+  res.send('Welcome to my myFlix !');
 });
 
 app.get('/books', (req, res) => {
