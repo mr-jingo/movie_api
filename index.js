@@ -80,15 +80,15 @@ app.post('/users/:name/movies/:movieId', (req, res) => {
 });
 
 app.put('/users/:name', (req, res) => {
-  res.send();
+  res.send('User was updated');
 });
 
 app.delete('/users/:name', (req, res) => {
-  res.send();
+  res.send('User was deleted');
 });
 
 app.delete('/users/:name/movies/:movieId', (req, res) => {
-  res.send();
+  res.send('Movie was deleted');
 });
 
 app.listen(8080, () => {
