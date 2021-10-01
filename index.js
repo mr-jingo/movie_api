@@ -52,11 +52,43 @@ app.use((err, req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Welcome to my myFlix !');
+  res.send('Welcome to my myFlix!');
 });
 
-app.get('/books', (req, res) => {
+app.get('/movies', (req, res) => {
   res.json(topMovies);
+});
+
+app.get('/movies/:title', (req, res) => {
+  res.json();
+});
+
+app.get('/users', (req, res) => {
+  res.json();
+});
+
+app.get('/users/:name', (req, res) => {
+  res.json();
+});
+
+app.post('/users', (req, res) => {
+  res.json();
+});
+
+app.post('/users/:name/movies/:movieId', (req, res) => {
+  res.json();
+});
+
+app.put('/users/:name', (req, res) => {
+  res.send();
+});
+
+app.delete('/users/:name', (req, res) => {
+  res.send();
+});
+
+app.delete('/users/:name/movies/:movieId', (req, res) => {
+  res.send();
 });
 
 app.listen(8080, () => {
